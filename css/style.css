@@ -1,0 +1,443 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+ a {
+	text-decoration: none;
+}
+
+/**
+ * Remove list-style
+ */ 
+
+ol, ul {
+	list-style: none;
+}
+
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul {
+	font-size: 1em;
+	font-weight: normal;
+}
+ 
+.container {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*  Alterações Gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cecece;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Header */
+.nav {
+    background: yellowgreen;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 5;
+}
+
+.cabecalho_menu ul, .cabecalho_menu ul li{
+    display: flex;
+    margin-left: 35px;
+}
+
+.cabecalho_menu ul li a {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 10px 0;
+    transition: all .5s ease;
+}
+
+.cabecalho_menu ul li a:hover {
+    color: #fff;
+}
+
+/* tela de vitrini */
+
+.btn-vitrini{
+    width: 100%;
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    background-color: #00508a;
+    box-shadow: 2px 5px 4px#000;
+    font-family: 'poppins';
+    margin: 6px;
+}
+
+
+/*  tela de açao */
+.conteudo{  
+display: flex;
+justify-content: space-around;
+}
+
+.container-anuncio{
+margin: 0 auto;
+display: flex;
+align-items: center;
+padding: 10px 0;
+        
+}
+.txt-informativo{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.informacao{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    border: 3px solid #000;
+    padding: 10px 35px ;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: all .5s ease;
+}
+.btn:hover{
+    border-color: #fff;
+    color: #fff;
+}
+
+.call {
+    text-align: justify;
+    font-style: italic;
+    padding: 0.5rem
+}
+
+/* Noticias */
+
+.ajuste{
+    padding: 50px 0;
+}
+
+.tituloSecao {
+    margin: 27px auto;
+    font-family: 'oswald';
+    color: #000;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+div.cards{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+div.icon {
+    width: 90%;
+    height: 200px;
+    padding: 20px;
+}
+
+div.cards section.card img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div.cards section.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-right: 20px;
+    flex: 1;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+div.cards section.card:first-child{
+    margin-left: 0;
+}
+
+div.cards section.card a{
+    text-decoration: none;
+    color: #00508a;
+}
+
+div.cards section.card h2{
+    font-family: 'poppins';
+    font-size: 2rem;
+}
+
+.descrição{
+    display: flex;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    max-width: 340px;
+    margin-top: 15px;
+}
+
+            /*  botoes  */
+.btn-noticias{
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    background-color: #00508a;
+    box-shadow: 2px 5px 4px#000;
+    left: 100px;
+    font-family: 'poppins';
+    margin: 6px;
+}
+
+.btn-noticias:hover{
+    color: #00508a; 
+    background-color: transparent; 
+    border: 1px solid #cecece ;
+    font-size: 1rem;
+    transition: all 0.3s ease; 
+    font-weight: bold; 
+}
+
+div.cards section.card:hover{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 50%);
+}
+
+/* tags */
+.tags {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.posição-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tags ul li {
+    display: flex;
+    padding: 15px;
+}
+
+.tags ul li a{
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 50%);
+}
+
+.tags ul li a:hover {
+    background: #000;
+    color: #fff;
+    transition: all 2s;
+}
+
+/* localização */
+section .ajust .localizacao{
+    display: flex;
+}
+
+.localizacao{
+    text-align: center;
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.gmap_canvas{
+    overflow: hidden;
+    background: none !important;
+    height: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+div.rodape {
+    display: flex;
+    align-items: center;
+    background: yellowgreen;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.assinaturasRodape {
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.contato h3, .footer_redes h3 {
+    font-weight: 600;
+}
+
+.contato ul li{
+    font-size: 16px;
+    padding: 2px;
+}
+
+.contato h3{
+    padding-bottom: 5px;
+}
+
+.footer_redes ul li {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 2px;
+}
+
+.footer_redes ul li a {
+    border: 3px solid #000;
+    display: block;
+    padding: 10px; 
+}
+
+.footer_redes ul li a:hover {
+    border: 3px solid #fff;
+    display: block;
+    padding: 10px;
+    transition: 0.1s  ease;
+    transform:translateY(-15px);
+    transition: all 1s ease;  
+}
+
+.footer_redes ul li {
+    margin:5px;
+  }
+  
+  .footer_redes ul li a {
+    padding: 3px;
+  }
+  
+  .footer_redes ul li a:hover {
+    padding: 3px;
+    transform:translateX(10px);
+  }
+/* animaoções */
+
+/* responsividade */
+
+@media screen and (max-width: 767px) {
+div.cards{
+    flex-direction: column;       
+}
+
+div.cards section.card{
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    height: 0;
+} 
+
+.txt-informativo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px
+}
+
+}
+
+@media screen and (max-width: 620px) {
+
+.cabecalho_menu ul, .cabecalho_menu ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;}
+
+.btn-noticias{
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    background-color: #00508a;
+    box-shadow: 2px 5px 4px#000;
+    left: 0;
+    font-family: 'poppins';
+    margin: 6px;
+    }
+
+    /* Footer redes sociais */
+.footer_redes ul li {
+    margin:5px ;
+    padding: 5px;
+    padding: 10px 0;
+    text-align: center;
+    }
+    
+    .footer_redes ul li a {
+    padding: 3px;
+    }
+    
+    .footer_redes ul li a:hover {
+    padding: 3px;
+    transform:translateX(10px);
+    }
+
+    /* localização */
+    .maps{
+        width: 350px;
+        height: 250px;
+    }
+}
