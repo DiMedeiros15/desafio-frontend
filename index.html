@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inforce</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body>
@@ -16,7 +22,7 @@
     <header class="nav">
         <div class="container">
             <a href="index.html">
-                <img src="logo_topo.png" alt="logo">
+                <img src="img/logo_topo.png" alt="logo">
             </a>
             <nav class="cabecalho_menu">
                 <ul>
@@ -29,47 +35,143 @@
         </div>
     </header>
 
+    <!-- <section class="ajuste cavalo">
+        <h2 class="tituloSecao">Vitrini de Imóveis</h2>
+        <div class="header"></div>
+        <div class="slider">
+            <div class="slider--controls">
+                <div class="slider--control" onclick="goPrev()">voltar</div>
+                <div class="slider--control" onclick="goNext()">próxima</div>
+            </div>
+            <div class="slider--width">
+                <div class="slider--item" style="background-image: url('img/2.jpg');">
+                    Viva o Surf
+                </div>
+                <div class="slider--item" style="background-image: url('img/2.jpg');">
+                    Aproveite a Prancha
+                </div>
+                <div class="slider--item" style="background-image: url('img/3.jpg');">
+                    Pegue Onda
+                </div>
+            </div>
+        </div>
+    </header>
+    </section> -->
+
     <!-- Seção vitrini de imóveis -->
     <section class="ajuste">
         <h2 class="tituloSecao">Vitrini de Imóveis</h2>
         <div class="cards">
             <section class="card pm">
                 <div class="icon">
-                    <img src="#" alt="">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/vitrine/imovel1.jpg" alt="">
                 </div>
                 <div class="box">
                     <h2>
-                        <a href="#"> Essa parte sera relacionada ao titulo</a>
+                        <a href="#">Apartamento</a>
                     </h2>
-                    <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Barra da Tijuca - RJ</p>
+                    <P>65 Metros</P>
+                    <ul class="icons">
+                        <li><i class="fas fa-bed ico"></i></li>
+                        <li><i class="fas fa-car ico"></i></li>
+                        <li><i class="fas fa-bath ico"></i></li>
+                    </ul>
                     <button class="btn-vitrini">Leia Mais</button>
                 </div>
             </section>
 
             <section class="card sd">
                 <div class="icon">
-                    <img src="#" alt="">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/vitrine/imovel2.jpg" alt="">
                 </div>
                 <div class="box">
                     <h2>
-                        <a href="#"> Essa parte sera relacionada ao titulo</a>
+                        <a href="#">Apartamento</a>
                     </h2>
-                    <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Leblon - RJ</p>
+                    <P>78 Metros</P>
+                    <ul class="icons">
+                        <li><i class="fas fa-bed ico"></i></li>
+                        <li><i class="fas fa-car ico"></i></li>
+                        <li><i class="fas fa-bath ico"></i></li>
+                    </ul>
                     <button class="btn-vitrini">Leia Mais</button>
                 </div>
             </section>
             <section class="card th">
                 <div class="icon">
-                    <img src="#" alt="">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/vitrine/imovel3.jpg" alt="">
                 </div>
                 <div class="box">
                     <h2>
-                        <a href="#"> Essa parte sera relacionada ao titulo</a>
+                        <a href="#">Apartamento</a>
                     </h2>
-                    <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Recreio dos Bandeirantes - RJ</p>
+                    <P>85 Metros</P>
+                    <ul class="icons">
+                        <li><i class="fas fa-bed ico"></i></li>
+                        <li><i class="fas fa-car ico"></i></li>
+                        <li><i class="fas fa-bath ico"></i></li>
+                    </ul>
                     <button class="btn-vitrini">Leia Mais</button>
                 </div>
             </section>
+            <!-- <section class="card pm">
+                <div class="icon">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/vitrine/imovel4.jpg" alt="">
+                </div>
+                <div class="box">
+                    <h2>
+                        <a href="#">Apartamento</a>
+                    </h2>
+                    <p>Urca - RJ</p>
+                    <P>60 Metros</P>
+                    <ul class="icons">
+                        <li><i class="fas fa-bed ico"></i></li>
+                        <li><i class="fas fa-car ico"></i></li>            
+                        <li><i class="fas fa-bath ico"></i></li>
+                    </ul>
+                    <button class="btn-vitrini">Leia Mais</button>
+                </div>
+            </section>
+
+            <section class="card sd">
+                <div class="icon">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/vitrine/imovel5.jpg" alt="">
+                </div>
+                <div class="box">
+                    <h2>
+                        <a href="#">Apartamento</a>
+                    </h2>
+                    <p>Barra da Tijuca - RJ</p>
+                    <P>74 Metros</P>
+                    <ul class="icons">
+                        <li><i class="fas fa-bed ico"></i></li>
+                        <li><i class="fas fa-car ico"></i></li>            
+                        <li><i class="fas fa-bath ico"></i></li>
+                    </ul>
+                    <button class="btn-vitrini">Leia Mais</button>
+                </div>
+            </section>
+            <section class="card th">
+                <div class="icon">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/vitrine/imovel6.jpg" alt="">
+                </div>
+                <div class="box">
+                    <h2>
+                        <a href="#">Apartamento</a>
+                    </h2>
+                    <p>Copacabana - RJ</p>
+                    <P>63 Metros</P>
+                    <ul class="icons">
+                        <li><i class="fas fa-bed ico"></i></li>
+                        <li><i class="fas fa-car ico"></i></li>            
+                        <li><i class="fas fa-bath ico"></i></li>
+                    </ul>
+                    <button class="btn-vitrini">Leia Mais</button>
+                </div>
+            </section> -->
         </div>
     </section>
 
@@ -90,104 +192,149 @@
     </div>
     <hr>
 
-    <!-- Seção Bloco de Noticias -->
-    <section class="ajuste">
-        <h2 class="tituloSecao">Ultimas Noticias</h2>
-        <div class="cards">
-            <section class="card pm">
+    <div class="slide-show">
+        <ul class="slides-list">
+            <li class="slide">
+                <img src="https://picsum.photos/300/300?image=8" />
+            </li>
+            <li class="slide">
+                <img src="https://picsum.photos/300/300?image=0" />
+            </li>
+            <li class="slide">
+                <img src="https://picsum.photos/300/300?image=6" />
+            </li>
+            <li class="slide">
+                <img src="https://picsum.photos/300/300?image=1" />
+            </li>
+        </ul>
+
+        <!-- <input type="radio" class="slide-controller" name="slide" checked />
+        <input type="radio" class="slide-controller" name="slide" />
+        <input type="radio" class="slide-controller" name="slide" />
+        <input type="radio" class="slide-controller" name="slide" /> -->
+
+        <!-- Seção Bloco de Noticias -->
+        <section class="ajuste">
+            <h2 class="tituloSecao">Ultimas Noticias</h2>
+            <div class="cards slide-show">
+                <section class="card pm slide">
+                    <div class="icon">
+                        <img src="https://labs.inforcedata.com.br/desafio-frontend/noticias/noticia1.jpg" alt="">
+                    </div>
+                    <div class="box2">
+                        <h2>
+                            <a href="#">Preço dos imóveis residenciais recua em setembro</a>
+                        </h2>
+                        <p class="descrição">Preço dos imóveis residenciais recua em setembro.</p>
+                        <button class="btn-noticias">Leia Mais</button>
+                    </div>
+                </section>
+
+                <section class="card sd">
+                    <div class="icon">
+                        <img src="https://labs.inforcedata.com.br/desafio-frontend/noticias/noticia2.jpg" alt="">
+                    </div>
+                    <div class="box2">
+                        <h2>
+                            <a href="#"> 20% dos novos financiamentos de imóveis da Caixa já são pelo IPCA</a>
+                        </h2>
+                        <p class="descrição">Lançada há um mês, modalidade é opcional e oferece juros de até 4,95% ao
+                            ano
+                            acrescidos da inflação no período.</p>
+                        <button class="btn-noticias">Leia Mais</button>
+                    </div>
+                </section>
+                <section class="card th">
+                    <div class="icon">
+                        <img src="https://labs.inforcedata.com.br/desafio-frontend/noticias/noticia3.jpg" alt="">
+                    </div>
+                    <div class="box2">
+                        <h2>
+                            <a href="#">Compra e venda de imóveis têm alta de quase 6%</a>
+                        </h2>
+                        <p class="descrição">Entre julho do ano passado e junho de 2019, foram comprados e vendidos
+                            cerca de
+                            613 mil imóveis no estado.</p>
+                        <button class="btn-noticias">Leia Mais</button>
+                    </div>
+                </section>
+                <!-- <section class="card th">
                 <div class="icon">
-                    <img src="#" alt="">
+                    <img src="https://labs.inforcedata.com.br/desafio-frontend/noticias/noticia4.jpg" alt="">
                 </div>
-                <div class="box">
+                <div class="box2">
                     <h2>
-                        <a href="#"> Essa parte sera relacionada ao titulo</a>
+                        <a href="#">Risco de bolha imobiliária aumenta na zona do euro</a>
                     </h2>
-                    <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="ela primeira vez em quatro anos, Londres não foi classificada como uma cidade com imóveis perigosamente sobrevalorizado.</p>
                     <button class="btn-noticias">Leia Mais</button>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="card sd">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <div class="box">
-                    <h2>
-                        <a href="#"> Essa parte sera relacionada ao titulo</a>
-                    </h2>
-                    <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn-noticias">Leia Mais</button>
-                </div>
-            </section>
-            <section class="card th">
-                <div class="icon">
-                    <img src="#" alt="">
-                </div>
-                <div class="box">
-                    <h2>
-                        <a href="#"> Essa parte sera relacionada ao titulo</a>
-                    </h2>
-                    <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button class="btn-noticias">Leia Mais</button>
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <!-- Seção tags -->
-    <section class="ajuste">
-        <h2 class="tituloSecao">Mais Acessados</h2>
-        <div class="tags">
-            <ul class="posição-tags">
-                <li><a href="#">Apartamento na Barra</a></li>
-                <li><a href="#">Apartamento na Barra</a></li>
-                <li><a href="#">Apartamento na Barra</a></li>
-                <li><a href="#">Apartamento na Barra</a></li>
-                <li><a href="#">Apartamento na Barra</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Seção Localização -->
-     <section class="ajuste">
-        <h2 class="tituloSecao">Localização</h2>
-        <div class="localizacao">
-            <div class="gmap_canvas">
-                 <iframe class="maps"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14690.283866446654!2d-43.3216803!3d-23.002799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c339c13e5009d61!2sInforce%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1631471404724!5m2!1spt-BR!2sbr"
-                    width="700" height="350" style="border:0;">
-            </iframe> 
             </div>
-        </div>
-    </section>  
+            <input type="radio" class="slide-controller" name="slide" checked />
+            <input type="radio" class="slide-controller" name="slide" />
+            <input type="radio" class="slide-controller" name="slide" />
+        </section>
 
-    <footer>
-        <div class="rodape">
-            <div class="container">
-                <div class="assinaturaRodape">
-                    <a href="index.html">
-                        <img src="logo_footer.png" alt="logo">
-                    </a>
-                </div>
-                <div class="contato">
-                    <h3>Contato</h3>
-                    <ul>
-                        <li>- 21 9999-9999</li>
-                        <li>- contato@inforce.com</li>
-                        <li>- Barra da tijuca - RJ</li>
-                    </ul>
-                </div>
-                <div class="footer_redes">
-                    <h3>Redes sociais</h3>
-                    <ul>
-                        <li><a href="#" target="_blank"> <img src="img/facebook.png" alt="Face"> </a></li>
-                        <li><a href="#" target="_blank"> <img src="img/instagram.png" alt="Insta"> </a></li>
-                        <li><a href="#" target="_blank"> <img src="img/twitter.png" alt="Twitter"> </a></li>
-                    </ul>
+        <!-- Seção tags -->
+        <section class="ajuste">
+            <h2 class="tituloSecao">Mais Acessados</h2>
+            <div class="tags">
+                <ul class="posição-tags">
+                    <li><a href="#">Apartamentos na barra</a></li>
+                    <li><a href="#">Casas no recreio</a></li>
+                    <li><a href="#">Casa com 3 quartos</a></li>
+                    <li><a href="#">Barra da tijuca</a></li>
+                    <li><a href="#">Apartamento com 2 quartos</a></li>
+                    <li><a href="#">Casa na urca</a></li>
+                    <li><a href="#">Humaita</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Localização -->
+        <section class="ajuste">
+            <h2 class="tituloSecao">Localização</h2>
+            <div class="localizacao">
+                <div class="gmap_canvas">
+                    <iframe class="maps"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14690.283866446654!2d-43.3216803!3d-23.002799!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8c339c13e5009d61!2sInforce%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1631471404724!5m2!1spt-BR!2sbr"
+                        width="700" height="350" style="border:0;">
+                    </iframe>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <footer>
+            <div class="rodape">
+                <div class="container">
+                    <div class="assinaturaRodape">
+                        <a href="index.html">
+                            <img src="img/logo_footer.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="contato">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li>- 21 9999-9999</li>
+                            <li>- contato@inforce.com</li>
+                            <li>- Barra da tijuca - RJ</li>
+                        </ul>
+                    </div>
+                    <div class="footer_redes">
+                        <h3>Redes sociais</h3>
+                        <ul>
+                            <li><a href="#" target="_blank"> <img src="img/facebook.png" alt="Face"> </a></li>
+                            <li><a href="#" target="_blank"> <img src="img/instagram.png" alt="Insta"> </a></li>
+                            <li><a href="#" target="_blank"> <img src="img/twitter.png" alt="Twitter"> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <link rel="stylesheet" href="js/script.js">
 </body>
 
 </html>
