@@ -1,4 +1,4 @@
-// Banner
+/// Banner
 
 const bannerImage = async () => {
     let url = "https://labs.inforcedata.com.br/desafio-frontend/banners.json";
@@ -87,17 +87,18 @@ document.addEventListener("load", init());
 
 
 const changeSlide = (event) => {
-    document.querySelectorAll(".slide-controller").forEach(dot => dot.classList.remove("active"));
-    if(event.target.nextElementSibling == null) {
-        document.querySelector(".container-vitrine").classList.toggle("active-slide")
-    } else {
-        document.querySelector(".container-vitrine").classList.toggle("active-slide");
-    }
 
-    event.target.classList.add("active");
+    document.querySelectorAll(".slide-controller").forEach(item => item.removeAttribute("data-active"));
+    
+    if(event.target.nextElementSibling != null) {
+        document.querySelector(".container-vitrine").classList.remove("active-slide");
+    } else {
+        document.querySelector(".container-vitrine").classList.add("active-slide");
+        event.target.setAttribute("data-active", true);
+    }
 
 }
 
 document.querySelectorAll(".slide-controller").forEach((item) => {
-    item.addEventListener("change", changeSlide);
+    item.addEventListener("click", changeSlide);
 })
