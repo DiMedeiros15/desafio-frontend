@@ -33,12 +33,12 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 }
  
 .container {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     padding: 15px 0;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -123,7 +123,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 80%;
     position: relative;
     margin: auto;
     margin-top: 60px;
@@ -359,7 +359,7 @@ margin: 0 auto;
 display: flex;
 align-items: center;
 padding: 10px 0; 
-width: 58%;     
+width: 80%;     
 }
 
 .txt-informativo{
