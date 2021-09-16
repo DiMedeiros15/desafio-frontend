@@ -3,7 +3,9 @@ Cada parte do processo foi um desafio desde a estrutura do html ao JavaScript, n
 
 Conteudo, cada parte do desafio serviu para aprimorar e desenvolver novas habilidades, principalmente a analitica e a criatividade.
 
-Minhas maiores dificuldades técnicas vieram justamente na criação do carousel ja que tinha que estruturaR do 0, então a crição do banner e o do vitrine de Imóveis levaram mais tempo do que esperando para definir a solução que fosse mais adaptiva para o cenario. 
+Minhas maiores dificuldades técnicas vieram justamente na criação do carousel ja que tinha que estruturar do 0, então a crição do banner e o do vitrine de Imóveis levaram mais tempo do que esperando para definir a solução que fosse mais adaptiva para o cenario.
+
+Em conclusão, não conseguir incrementar a api de noticias a tempo prazo.
 
 Busquei utilizar o flexbox para que fosse mais flexível a medida que fosse construída cada etapa.
 
