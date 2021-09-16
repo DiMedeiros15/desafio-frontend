@@ -2,9 +2,15 @@
    Reset
    ========================================================================== */
 
- a {
+   a {
 	text-decoration: none;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 /**
  * Remove list-style
@@ -14,7 +20,7 @@ ol, ul {
 	list-style: none;
 }
 
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,  footer, header, nav, section, main {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -40,11 +46,11 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #cecece;
+    background-color: #eee
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 20px;
 }
@@ -54,12 +60,29 @@ img {
     max-width: 100%;
 }
 
+.ajuste{
+    padding: 30px 0;
+}
+
+.tituloSecao {
+    margin: 27px auto;
+    color: #78a109;
+    font-size: 1.7em;
+    font-weight: 600;
+    text-align: center;
+    background-color: #2f2f2f;
+    padding: 15px 0;
+    margin-bottom: 80px;
+    font-family: 'montserrat' ,Helvetica,Arial,sans-serif;
+}
+
 /* Header */
 .nav {
-    background: yellowgreen;
+    background: #80c442;
     width: 100%;
     padding: 5px 0;
     z-index: 5;
+    position: fixed;
 }
 
 .cabecalho_menu ul, .cabecalho_menu ul li{
@@ -69,7 +92,7 @@ img {
 
 .cabecalho_menu ul li a {
     font-size: 16px;
-    color: #000;
+    color: #f2f2f2;
     font-weight: bold;
     letter-spacing: .1em;
     padding: 10px 0;
@@ -77,72 +100,157 @@ img {
 }
 
 .cabecalho_menu ul li a:hover {
-    color: #fff;
+    color: #535353;
 }
 
-/* Tela de carossel */
+/* banner */
 
-/* .cavalo {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-.header {
-    height: 50px;
-    background-color: #FF0000;
-}
-
-.slider {
-    width: 100vw;
-    height: 400px;
-    overflow: hidden;
-}
-.slider--width {
-    height: 100%;
-    display: flex;
-    transition: all ease 0.3s;
-}
-.slider--item {
+.mySlides img{
+    height: 300px;
     width: 100%;
-    height: inherit;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFF;
-    text-shadow: 0px 1px 1px #333;
-    font-size: 50px;
 }
-.slider--controls {
-    position: absolute;
-    z-index: 99;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.slider--control {
-    width: 50px;
-    height: 50px;
-    background-color: #FFF;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-} */
 
-/* tela de vitrini */
-
-.btn-vitrini{
+.btn-banner{
     width: 100%;
     text-transform: capitalize;
     padding: 0.5rem 1.3rem;
     font-weight: 300;
     cursor: pointer;
     color: #fff;
-    background-color: #00508a;
     box-shadow: 2px 5px 4px#000;
     font-family: 'poppins';
-    margin: 6px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides:nth-of-type(1){
+    display: block;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* tela de vitrine */
+
+.btn-vitrini {
+    width: 100%;
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #80c442;
+    background: transparent;
+    box-shadow: 2px 5px 4px #ddd;
+    font-family: 'poppins';
+    transition: .6s;
+    border: 3px solid #80c442;
+}
+
+.btn-vitrini:hover {
+    width: 85%;
+    padding: 0.5rem 0rem;
+    color: #fff;
+    background: #80c442;
+    font-family: 'poppins';
+    font-size: 16px;
+    transition: .6s;
+}
+
+.vitrine{
+    overflow: hidden;
+    top: 15px;
+    position: relative;
+}
+
+.btn-vitrini {
+    width: 100%;
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #80c442;
+    background: transparent;
+    box-shadow: 2px 5px 4px #ddd;
+    font-family: 'poppins';
+    transition: .6s;
+    border: 3px solid #80c442;
+}
+
+.btn-vitrini:hover {
+    width: 85%;
+    padding: 0.5rem 0rem;
+    color: #fff;
+    background: #80c442;
+    font-family: 'poppins';
+    font-size: 16px;
+    transition: .6s;
+}
+
+.active-slide{
+    margin-left: calc(-100vw - 80% - -22px);
 }
 
 .icons{
@@ -164,73 +272,34 @@ img {
     justify-content: space-around;
 }
 
-.box ul li .ico {
+.box ul li .ico  {
     font-size: 35px;
 }
 
 
-/*  tela de açao */
-.conteudo{  
-display: flex;
-justify-content: space-around;
-}
-
-.container-anuncio{
-margin: 0 auto;
-display: flex;
-align-items: center;
-padding: 10px 0;
-        
-}
-.txt-informativo{
-    width: 35%;
+.vitrine div.cards{
     display: flex;
-    align-items: center;
+    width: 100vw;
+    margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.informacao{
+.look {
+    width: 80%;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 20px 0;
 }
 
-.btn{
-    border: 3px solid #000;
-    padding: 10px 35px ;
-    font-size: 16px;
-    color: #000;
-    text-transform: uppercase;
-    line-height: 20px;
-    font-weight: bold;
-    letter-spacing: .1em;
-    transition: all .5s ease;
-}
-.btn:hover{
-    border-color: #fff;
-    color: #fff;
+.container-vitrine {
+    display: flex;
+    width: 100%;   
 }
 
-.call {
-    text-align: justify;
-    font-style: italic;
-    padding: 0.5rem
-}
-
-/* Noticias */
-
-.ajuste{
-    padding: 50px 0;
-}
-
-.tituloSecao {
-    margin: 27px auto;
-    font-family: 'oswald';
-    color: #000;
-    font-size: 1.7em;
-    font-weight: 600;
-    text-transform: capitalize;
-    text-align: center;
+.vitrine div.card {
+    flex: 1 0 calc(33.33333333333333% - 14px) !important;
 }
 
 div.cards{
@@ -246,14 +315,14 @@ div.icon {
     padding: 20px;
 }
 
-div.cards section.card img{
+div.cards section.card img, div.cards div.card img{
     width: 100%;
     height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-div.cards section.card{
+div.cards section.card, div.cards div.card{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -262,6 +331,172 @@ div.cards section.card{
     margin-right: 20px;
     flex: 1;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+div.cards div.card:first-child{
+    margin-left: 0;
+}
+
+div.cards div.card a{
+    text-decoration: none;
+    color: #80c442;
+}
+
+div.cards div.card h2{
+    font-family: 'poppins';
+    font-size: 1.7rem;
+}
+
+.descrição{
+    display: flex;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    max-width: 340px;
+    margin-top: 15px;
+}
+
+div.cards div.card:hover{
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 50%);
+}
+
+.slide-controller, .slide-controller2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+  
+.active, .slide-controller:hover {
+    color: #717171;
+    transition: all 0.5s ease;
+  } 
+
+/*  tela de açao */
+.conteudo{  
+display: flex;
+justify-content: space-around;
+
+}
+
+.container-anuncio{
+margin: 0 auto;
+display: flex;
+align-items: center;
+padding: 10px 0; 
+width: 65%;     
+}
+
+.txt-informativo{
+width: 35%;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.informacao{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
+    border: 2px solid #000;
+    padding: 10px 35px ;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: all .6s ease;
+}
+.btn:hover{
+    border: 2px solid #000;
+    color: #fff;
+    background: #80c442;
+    transition: .6s ease;
+}
+
+.call {
+    text-align: justify;
+    font-style: italic;
+    padding: 0.5rem
+}
+
+/* Noticias */
+
+.btn-noticias{
+    text-transform: capitalize;
+    padding: 0.5rem 1.3rem;
+    font-weight: 300;
+    cursor: pointer;
+    color: #80c442;
+    position: relative;
+    background: transparent;
+    box-shadow: 2px 5px 4px#000;
+    font-family: 'poppins';
+    margin: 6px;
+}
+
+.btn-noticias:hover{
+    color:  #fff; 
+    background-color: #80c442; 
+    border: 1px solid #cecece ;
+    font-size: 1rem;
+    transition: all 0.3s ease; 
+    font-weight: bold; 
+}
+
+.container-noticias{
+    display: flex;
+    width: 95%;
+}
+
+div.cards {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.noticias div.cards {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icon {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+
+div.cards div.card img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+div.cards div.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+div.cards div.card:hover {
+    border: 3px solid #80c442;
 }
 
 .box2{
@@ -279,7 +514,7 @@ div.cards section.card:first-child{
 
 div.cards section.card a{
     text-decoration: none;
-    color: #00508a;
+    color: #80c442;
 }
 
 div.cards section.card h2{
@@ -296,43 +531,19 @@ div.cards section.card h2{
     margin-top: 15px;
 }
 
-            /*  botoes  */
-.btn-noticias{
-    text-transform: capitalize;
-    padding: 0.5rem 1.3rem;
-    font-weight: 300;
-    cursor: pointer;
-    color: #fff;
-    position: relative;
-    background-color: #00508a;
-    box-shadow: 2px 5px 4px#000;
-    left: 100px;
-    font-family: 'poppins';
-    margin: 6px;
-}
-
-.btn-noticias:hover{
-    color: #00508a; 
-    background-color: transparent; 
-    border: 1px solid #cecece ;
-    font-size: 1rem;
-    transition: all 0.3s ease; 
-    font-weight: bold; 
-}
-
-div.cards section.card:hover{
+div.cards div.card:hover {
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 50%);
 }
 
 /* tags */
 .tags {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.posição-tags {
+.posicao-tags {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -340,20 +551,27 @@ div.cards section.card:hover{
 
 .tags ul li {
     display: flex;
-    padding: 15px;
+    padding: 12px;
 }
 
 .tags ul li a{
-    border: 2px solid #000;
-    border-radius: 20px;
-    padding: 20px;
+    border: 1px solid #cecece;
+    color: #80c442;
+    border-radius: 15px;
+    justify-content: center;
+    height: 45px;
+    width: 220px;
+    display: flex;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%), 0 4px 20px 0 rgb(0 0 0 / 50%);
+    align-items: center;
 }
 
 .tags ul li a:hover {
-    background: #000;
     color: #fff;
-    transition: all 2s;
+    transition: all .6s;
+    transform: translateY(10px);
+    background: #80c442;
+    border: none;
 }
 
 /* localização */
@@ -382,9 +600,8 @@ section .ajust .localizacao{
 div.rodape {
     display: flex;
     align-items: center;
-    background: yellowgreen;
+    background: #80c442;
     justify-content: center;
-    margin-top: 10px;
 }
 
 .assinaturasRodape {
@@ -413,20 +630,19 @@ div.rodape {
     display: inline-block;
     margin-right: 12px;
     padding: 2px;
+    
 }
 
 .footer_redes ul li a {
-    border: 3px solid #000;
+    /* border: 3px solid #000; */
     display: block;
     padding: 10px; 
 }
 
 .footer_redes ul li a:hover {
-    border: 3px solid #fff;
     display: block;
     padding: 10px;
     transition: 0.1s  ease;
-    transform:translateY(-15px);
     transition: all 1s ease;  
 }
 
@@ -440,12 +656,24 @@ div.rodape {
   
   .footer_redes ul li a:hover {
     padding: 3px;
-    transform:translateX(10px);
   }
-/* animaoções */
+
+.fa-facebook.ico{
+    font-size: 35px;
+    color: #3b5998;
+} 
+
+.fa-instagram.ico{
+    font-size: 35px;
+    color: #C13584;
+}
+
+.fa-twitter.ico{
+    font-size: 35px;
+    color: #00acee;
+}  
 
 /* responsividade */
-
 @media screen and (max-width: 767px) {
 div.cards{
     flex-direction: column;       
@@ -467,29 +695,86 @@ div.cards section.card{
     padding: 10px
 }
 
+/* vitrine */
+.vitrine div.cards {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.look {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-vitrine {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+div.cards div.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slide-controller {
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 620px) {
 
+    /* header */
+
+.nav{
+    position: static;
+}
 .cabecalho_menu ul, .cabecalho_menu ul li {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 10px;}
 
+    /* banner */
+.container-anuncio{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 0; 
+    width: 90%;
+}
+
+    /* noticias */
 .btn-noticias{
     text-transform: capitalize;
     padding: 0.5rem 1.3rem;
     font-weight: 300;
     cursor: pointer;
-    color: #fff;
+    color: #80c442;
     position: relative;
-    background-color: #00508a;
     box-shadow: 2px 5px 4px#000;
     left: 0;
     font-family: 'poppins';
     margin: 6px;
-    }
+}
+
+    /* banner */
+.slideshow-container{
+    max-width: 85% !important;
+}
+.mySlides img, .mySlides2 img{
+    height: 150px;
+    width: 100%;
+}
 
     /* Footer redes sociais */
 .footer_redes ul li {
@@ -499,43 +784,24 @@ div.cards section.card{
     text-align: center;
     }
     
-    .footer_redes ul li a {
+.footer_redes ul li a {
     padding: 3px;
     }
     
-    .footer_redes ul li a:hover {
+.footer_redes ul li a:hover {
     padding: 3px;
-    transform:translateX(10px);
     }
 
     /* localização */
-    .maps{
-        width: 350px;
-        height: 250px;
+.maps{
+    width: 350px;
+    height: 250px;
     }
 }
 
-.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
-.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
-.slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
-.slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
-
-.slide-show{
-  overflow: hidden;
-}
-
-.slides-list{
-  --selected-item: 0;
-  --total-items: 4;
-  list-style-type: none;
-  margin: 10px 0;
-  padding: 0;
-  position: relative;
-  left: calc(var(--selected-item) * -100%);
-  width: calc(var(--total-items) * 100%);
-  transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
-  
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
+.alinhar-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: #fff;
 }
