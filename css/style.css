@@ -682,6 +682,10 @@ div.rodape {
 div.cards{
     flex-direction: column;       
 }
+	
+.container {
+flex-direction: column;
+} 	
 
 div.cards section.card{
     margin-bottom: 20px;
